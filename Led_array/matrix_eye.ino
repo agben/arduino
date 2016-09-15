@@ -78,48 +78,6 @@ void loop()
   ledout(3,0,0,3);             // half-open
   ledout(4,0,0,6);             // closed
   ledout(3,0,0,3);             // half-open
-
-/*
-  for (int i=0; i<10; i++) ledout(0,0,0);
-  for (int i=0; i<5; i++) ledout(1,0,0);
-  for (int i=0; i<10; i++) ledout(0,0,0);
-  for (int i=0; i<5; i++) ledout(2,0,0);
-  for (int i=0; i<10; i++) ledout(0,0,0);
-  ledout(3,0,0);
-  for (int i=0; i<3; i++) ledout(4,0,0);
-  ledout(3,0,0);
-/*
-  for (int i=0; i<10; i++)                //scroll 0-9 from right to left
-  {
-    for (int j=8; j>-7; j--) ledout(i,j,0);
-  }
-
-  for (int i=9; i>=0; i--)                //scroll 9-0 from bottom to top
-  {
-    for (int j=-6; j<9; j++) ledout(i,0,j);
-  }
-
-  for (int i=0; i<10; i++)                //scroll 0-9 from top to bottom
-  {
-    for (int j=8; j>-7; j--) ledout(i,0,j);
-  }
-
-  for (int i=9; i>=0; i--)                //scroll 9-0 from bottom left to top right
-  {
-    for (int j=-6; j<9; j++) ledout(i,j,j);
-  }
-
-  for (int i=0; i<10; i++)                //scroll 0-9 from bottom right to top left
-  {
-    for (int j=8; j>-7; j--) ledout(i,j,-j);
-  }
-
-  for (int i=1; i<10; i++)                //flash a +x+x pattern before starting again
-  {
-    ledout(10,0,0);
-    ledout(11,0,0);
-  }
-*/
 }
 
 void ledout(int iBitMapNo, int hOffset, int vOffset, int iDuration)            //offset bitmap display
